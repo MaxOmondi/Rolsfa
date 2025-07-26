@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rolsfa Enterprise</title>
+         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--hero section-->
+        <section class="hero">
+            <header class="header">
+            <img src="logo.png" class="logo">
+
+            <input type="checkbox" id="check">
+            <label for="check"class="icons">
+                <i class="fa fa-bars" id="menu-icon"></i>
+                <i class="fa fa-times" id="close-icon"></i>
+            </label>
+
+            <div class="navbar">
+                <ul>
+                <a href="" class="active" style="--i:0;">Home</a>
+                <a href="" style="--i:1;">About</a>
+                <a href="" style="--i:2;">Services</a>
+                <a href="" style="--i:3;">Contact</a>
+                </ul>
+            </div>
+            </header>
+
+            <div class="content">
+                <h1> Strategic, Sustainable & Impactful</h1>
+                <p>Rolsfa Enterprise is a consulting firm that offers broad range of consulting services <br>within the private and public sectors</p>
+                <div>
+                    <button type="button"><span></span> Read More </button>
+                    <button type="button"><span></span>Contact Us </button>
+                </div>
+                
+            </div>
+        </section>
+    
+
+
+        <!--service page-->
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <h2>Our Services</h2>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-hammer"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
