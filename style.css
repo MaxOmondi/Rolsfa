@@ -32,7 +32,7 @@ header::before{
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.1);
+    background: darkgreen;
     backdrop-filter: blur(50px);
     z-index: -1;
 }
@@ -57,7 +57,7 @@ header::before{
     color: #009688;
 }
 
-.navbar:hover{
+.navbar a:hover{
     color: #009688;
 }
 
@@ -188,7 +188,7 @@ button:hover span{
 
 /*services*/
 .services{
-    height: 100vh;
+   
     width: 100%;
     display: grid;
     place-items: center;
@@ -234,6 +234,18 @@ button:hover span{
     line-height: 1.6;
     letter-spacing: 0.03em;
 }
+.services img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.img-wrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    border-radius: 5%;
+}
 
 .icon-wrapper{
     background-color: darkgreen;
@@ -249,24 +261,30 @@ button:hover span{
     transition: 0.5s;
 }
 
-.card:hover .icon-wrapper{
+.card1:hover .icon-wrapper{
     background-color: white;
     color: darkgreen;
 }
 
-.card:hover{
+.card1:hover{
     background-position: 0 100%;
 }
 
-.card:hover h3{
+.card1:hover h5{
     color: white;
 }
-.card:hover ul{
+.card1:hover ul{
     color: white;
+}
+.card1:hover p{
+    color: white;
+}
+.card1 p{
+    color: black;
 }
 
 @media screen and (min-width:768px) {
-    .services{
+    .services {
         padding: 0 2em;
     }
     .column{
@@ -294,4 +312,165 @@ button:hover span{
     align-items: center;
     text-align: center;
     position: relative;
+}
+
+
+/*Objectives*/
+.objectives{
+    width: 100%;
+    height: 100vh;
+}
+.container-obj{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(5, 87, 29, 0.75)),url(img4.jpg);
+
+   
+}
+
+.card1{
+    width: 95%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(white 50%, green 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.objectives h5{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+@media screen and (min-width:768px) {
+    .objectives {
+        padding: 0 2em;
+    }
+    .column{
+        flex: 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .objectives{
+        padding: 1em 3em;
+    }
+    .column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+.Objective-head{
+    font-size: 35px;
+    color: white;
+}
+
+.objectives h5{
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*about page*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+
+.team{
+    width: 100%;
+}
+
+.about-content h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.about-con{
+    flex: 1;
+    width: 600px;
+    margin: 0 25px;
+}
+
+.about-con h5{
+    font-size: 25px;
+    margin: 10px;
+
+}
+.about-con p{
+    font-size: 20px;
+
+}
+
+.about-img{
+    flex: 1;
+    width: 600px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about img{
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+.about-img .top-top{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+@media screen and (max-width:768px){
+    .about{
+        margin: 0px;
+        top: 680px;
+
+    }
+    .about-container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
+    .about-con{
+        width: 100%;
+        margin: 35px 0px;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+    .about-con p{
+        font-size: 16px;
+    }
+    .about-con h5{
+        font-size: 20px;
+    }
 }
